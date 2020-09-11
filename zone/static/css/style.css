@@ -1,0 +1,68 @@
+.main {
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+}
+
+.navbar {
+  background: black;
+  opacity: 0.8;
+  border-bottom: 1px solid #fff;
+  font-size: 15.5px;
+  font-weight: lighter;
+}
+
+.nav-item {
+  padding-bottom: 2.5px;
+}
+
+.navbar-toggler {
+  width: 40px;
+  height: 40px;
+  background-color: black;
+  border-radius: 0px;
+}
+
+.navbar-toggler .line {
+  width: 100%;
+  float: right;
+  background-color: #fff;
+  height: 2.5px;
+}
+
+.container .page-img {
+  height: 720px;
+  width: 745px;
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+.container .home-img {
+  height: 300px;
+  width: 300px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  opacity: 0.8;
+}
+
+.footer {
+  height: 120px;
+  background: black;
+  text-align: center;
+  color: white;
+  opacity: 0.8;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-top: 1px solid #fff;
+}
+
+.footer .vl {
+  border-left: 1.5px solid white;
+  opacity: 0.5;
+}
+
+.hr {
+  border: 2px solid white;
+}

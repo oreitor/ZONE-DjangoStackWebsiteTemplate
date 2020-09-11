@@ -1,0 +1,39 @@
+{% load static %}
+
+<div id="contact" class="bg-light" style="height: 600px;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6 pr-5" style="padding-top: 120px;">
+            <h1 class="display-4">Contact Us</h1>
+            <hr>
+            <p class="lead">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis esse laboriosam numquam quia voluptatibus. Adipisci deleniti labore perspiciatis repellat veritatis?
+              <br><br>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              <br><br>
+              <a href="{% url 'contact' %}" class="border border-dark rounded py-2 px-3 text-dark lead">
+                  Send a message!
+              </a>
+            </p>
+          </div>
+
+          <div class="col-sm-4 mx-auto" style="padding-top: 120px;">
+            <div class="card">
+              <img src="{% static 'img/me.jpg' %}" class="card-img-top img-thumbnail" style="filter: grayscale(70%);" alt="">
+              <div class="card-body">
+                <p class="card-title lead">
+                  Sencer Karakaya - Head of ZONE
+                </p>
+                <hr>
+                <div class="card-text font-weight-light">
+                  Contact Me:&nbsp;
+                  <a href="https://www.linkedin.com/in/sencer-karakaya-34a4a8151/">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+</div>

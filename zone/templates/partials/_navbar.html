@@ -1,0 +1,49 @@
+{% load static %}
+
+<header>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+
+      <div class="container">
+        <a href="{% url 'index' %}" class="navbar-brand">
+          <img src="{% static 'img/logo.jpg' %}" alt="" style="max-width: 40px;height: auto;">
+          &nbsp;
+          <span class="font-weight-light small">Break Down The Borders</span>
+        </a>
+
+        <button class="navbar-toggler border" data-target="#navbarCollapse" data-toggle="collapse" aria-expanded="true">
+          <span class="line"></span>
+          <span class="line my-1"></span>
+          <span class="line"></span>
+        </button>
+
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+            <a href="#ds" class="nav-link">Data&nbsp;Science</a>
+            </li>
+            <li class="nav-item">
+              <a href="#ai" class="nav-link">Artificial&nbsp;Intelligence</a>
+            </li>
+            <li class="nav-item">
+              <a href="#ml" class="nav-link">Machine&nbsp;Learning</a>
+            </li>
+            <li class="nav-item">
+              <a href="#dl" class="nav-link">Deep&nbsp;Learning</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact&nbsp;Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+
+</header>

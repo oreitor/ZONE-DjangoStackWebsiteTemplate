@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style_articles.css' %}">
+
+  <title>ZONE - Deep Learning</title>
+
+</head>
+
+<body style="background-color: #ff4f81;">
+
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+
+    <div class="container">
+      <a href="{% url 'index' %}" class="navbar-brand">
+        <img src="{% static 'img/logo.jpg' %}" alt="" style="max-width: 40px;height: auto;">
+        &nbsp;
+        <span class="font-weight-light small">Break Down The Borders</span>
+      </a>
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a href="{% url 'index' %}" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item active">
+          <a href="{% url 'deeplearning' %}" class="nav-link">Deep Learning</a>
+        </li>
+      </ul>
+    </div>
+
+  </nav>
+
+  <img src="{% static 'img/dl.jpg' %}" class="page-img" alt="">
+
+  <div class="container" style="margin-top: 50px; margin-bottom: 120px;">
+
+    <h1 class="display-4">Deep Learning</h1>
+    <hr>
+    <p class="lead">
+      Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning. Learning can be supervised, semi-supervised or unsupervised.
+      <br><br>
+      Deep learning architectures such as deep neural networks, deep belief networks, recurrent neural networks and convolutional neural networks have been applied to fields including computer vision, machine vision, speech recognition, natural language processing, audio recognition, social network filtering, machine translation, bioinformatics, drug design, medical image analysis, material inspection and board game programs, where they have produced results comparable to and in some cases surpassing human expert performance.
+      <br><br>
+      Artificial neural networks (ANNs) were inspired by information processing and distributed communication nodes in biological systems. ANNs have various differences from biological brains. Specifically, neural networks tend to be static and symbolic, while the biological brain of most living organisms is dynamic (plastic) and analog.
+      <br><br>
+      The adjective "deep" in deep learning comes from the use of multiple layers in the network. Early work showed that a linear perceptron cannot be a universal classifier, and then that a network with a nonpolynomial activation function with one hidden layer of unbounded width can on the other hand so be. Deep learning is a modern variation which is concerned with an unbounded number of layers of bounded size, which permits practical application and optimized implementation, while retaining theoretical universality under mild conditions. In deep learning the layers are also permitted to be heterogeneous and to deviate widely from biologically informed connectionist models, for the sake of efficiency, trainability and understandability, whence the "structured" part.
+    </p>
+
+  </div>
+
+  <footer class="footer">
+
+    Copyright © 2020
+    &nbsp;&nbsp;<span class="vl my-auto"></span>&nbsp;&nbsp;
+    ZONE
+
+  </footer>
+
+  <script src="{% static 'js/jquery.min.js' %}"></script>
+  <script src="{% static 'js/popper.min.js' %}"></script>
+  <script src="{% static 'js/bootstrap.min.js' %}"></script>
+</body>
+
+</html>

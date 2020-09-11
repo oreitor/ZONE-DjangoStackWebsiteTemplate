@@ -1,0 +1,145 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+    <div id="home" class="bg-light" style="height: 720px;">
+      <div class="container">
+        <img src="{% static 'img/logo.jpg' %}" class="home-img float-right" alt="">
+        <h1 class="display-1" style="padding-top: 400px;">ZONE</h1>
+        <hr>
+        <h1 class="display-4">Break Down The Borders</h1>
+        <p class="lead">
+        </p>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div id="ds" style="height: 720px; background-color: #2dde98;">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6 pr-5" style="padding-bottom: 200px; padding-top: 200px;">
+            <h1 class="display-4">Data&nbsp;Science</h1>
+            <hr>
+            <p class="lead">
+              Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from many structural and unstructured data. Data science is related to data mining, machine
+              learning and...
+              <br><br>
+              <a href="{% url 'datascience' %}" class="border border-dark rounded py-2 px-3 text-dark lead">
+                Learn More...
+              </a>
+            </p>
+          </div>
+
+          <div class="col-sm-6 mr-auto">
+            <img src="{% static 'img/ds.jpg' %}" class="page-img float-left" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div id="ai" style="height: 720px; background-color: #1cc7d0">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6 pr-5" style="padding-bottom: 200px; padding-top: 200px;">
+            <h1 class="display-4">Artificial&nbsp;Intelligence</h1>
+            <hr>
+            <p class="lead">
+              Artificial intelligence (AI), sometimes called machine intelligence, is intelligence demonstrated by machines, unlike the natural intelligence displayed by humans and animals. Leading AI textbooks define the field as the study of
+              "intelligent agents": any device that...
+              <br><br>
+              <a href="{% url 'artificialintelligence' %}" class="border border-dark rounded py-2 px-3 text-dark lead">
+                Learn More...
+              </a>
+            </p>
+          </div>
+
+          <div class="col-sm-6 mr-auto">
+            <img src="{% static 'img/ai.jpg' %}" class="page-img float-left" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div id="ml" style="height: 720px; background-color: #8e43e7">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6 pr-5" style="padding-bottom: 200px; padding-top: 200px;">
+            <h1 class="display-4">Machine&nbsp;Learning</h1>
+            <hr>
+            <p class="lead">
+              Machine learning (ML) is the study of computer algorithms that improve automatically through experience. It is seen as a subset of artificial intelligence. Machine learning algorithms build a mathematical model based on sample data,
+              known
+              as...
+              <br><br>
+              <a href="{% url 'machinelearning' %}" class="border border-dark rounded py-2 px-3 text-dark lead">
+                Learn More...
+              </a>
+            </p>
+          </div>
+
+          <div class="col-sm-6 mr-auto">
+            <img src="{% static 'img/ml.jpg' %}" class="page-img float-left" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div id="dl" style="height: 720px; background-color: #ff4f81">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-sm-6 pr-5" style="padding-bottom: 200px; padding-top: 200px;">
+            <h1 class="display-4">Deep&nbsp;Learning</h1>
+            <hr>
+            <p class="lead">
+              Deep learning (also known as deep structured learning) is part of a broader family of machine learning methods based on artificial neural networks with representation learning. Learning can be supervised, semi-supervised or...
+              <br><br>
+              <a href="{% url 'deeplearning' %}" class="border border-dark rounded py-2 px-3 text-dark lead">
+                Learn More...
+              </a>
+            </p>
+          </div>
+
+          <div class="col-sm-6 mr-auto">
+            <img src="{% static 'img/dl.jpg' %}" class="page-img float-left" alt="">
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    <div id="about" class="bg-light" style="height: 720px; padding-top: 200px;">
+      <div class="container">
+
+            <h1 class="display-4">About</h1>
+            <hr>
+            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+              consequat. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo, libero.
+              <br><br>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+
+      </div>
+    </div>
+
+    <div class="hr"></div>
+
+    {% include 'pages/contactus.html' %}
+
+{% endblock %}
